@@ -645,7 +645,7 @@ strong { font-weight: 600; }
   max-width: 360px;
   border-radius: var(--radius);
   margin-bottom: var(--space-lg);
-  border: 1px solid var(--border);
+  border: 2px solid var(--accent);
 }
 
 /* Stu intro (homepage 2-column: image + text) */
