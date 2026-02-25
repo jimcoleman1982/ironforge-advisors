@@ -652,6 +652,7 @@ strong { font-weight: 600; }
   border-radius: var(--radius);
   margin-bottom: var(--space-lg);
   border: 2px solid var(--accent);
+  object-fit: cover;
 }
 
 /* Stu intro (homepage 2-column: image + text) */
@@ -1125,6 +1126,9 @@ strong { font-weight: 600; }
     grid-template-columns: 280px 1fr;
     gap: var(--space-lg);
     align-items: start;
+  }
+  .about-intro--wide {
+    grid-template-columns: 360px 1fr;
   }
   .about-intro .photo-placeholder,
   .about-intro .stu-photo {
