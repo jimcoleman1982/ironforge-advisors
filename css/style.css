@@ -490,6 +490,9 @@ strong { font-weight: 600; }
 .content-block p strong {
   color: var(--text-primary);
 }
+.content-block--dark p {
+  color: var(--text-primary);
+}
 
 /* Bold-lead paragraphs (services "What this is NOT") */
 .bold-lead {
