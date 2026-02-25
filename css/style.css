@@ -669,6 +669,20 @@ strong { font-weight: 600; }
   margin-bottom: var(--space-lg);
 }
 
+/* Approach layout (image + cards side by side) */
+.approach-layout {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+.approach-layout .stu-photo {
+  margin-bottom: 0;
+  object-fit: cover;
+}
+.approach-layout .approach-grid {
+  margin-top: 0;
+}
+
 /* Colorado regions */
 .regions {
   display: grid;
@@ -1105,6 +1119,20 @@ strong { font-weight: 600; }
     margin-bottom: 0;
   }
 
+  .approach-layout {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: var(--space-lg);
+    align-items: start;
+  }
+  .approach-layout .stu-photo {
+    height: 100%;
+    max-width: 280px;
+  }
+  .approach-layout .approach-grid {
+    grid-template-columns: 1fr;
+  }
+
   .stu-intro {
     display: grid;
     grid-template-columns: 280px 1fr;
@@ -1131,6 +1159,16 @@ strong { font-weight: 600; }
 
   .proof-points {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .approach-layout {
+    grid-template-columns: 320px 1fr;
+  }
+  .approach-layout .stu-photo {
+    max-width: 320px;
+  }
+  .approach-layout .approach-grid {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
