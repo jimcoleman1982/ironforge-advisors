@@ -648,6 +648,27 @@ strong { font-weight: 600; }
   border: 1px solid var(--border);
 }
 
+/* Stu intro (homepage 2-column: image + text) */
+.stu-intro {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-lg);
+}
+.stu-intro .stu-photo {
+  margin-bottom: 0;
+}
+
+/* Section photo (wide landscape image) */
+.section-photo {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  margin-bottom: var(--space-lg);
+}
+
 /* Colorado regions */
 .regions {
   display: grid;
@@ -1082,6 +1103,13 @@ strong { font-weight: 600; }
   .about-intro .photo-placeholder,
   .about-intro .stu-photo {
     margin-bottom: 0;
+  }
+
+  .stu-intro {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: var(--space-lg);
+    align-items: start;
   }
 }
 
